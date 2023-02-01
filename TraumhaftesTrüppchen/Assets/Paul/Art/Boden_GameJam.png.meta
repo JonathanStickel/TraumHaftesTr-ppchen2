@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf570b87a690c3047ae7eab68d28c25d
-      internalID: -1702487002
+      spriteID: 2ff5fd7eaa9d5cc43aa82979d31a4a8e
+      internalID: 208602970
       vertices: []
       indices: 
       edges: []
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb4760c417259f41a041c57254ed976
-      internalID: -393891211
+      spriteID: 6156d11428160d645ba39868ba7a7a95
+      internalID: -1453768530
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae2e00bbd50a99c46b5fb7f595b9e0f7
-      internalID: 1782855704
+      spriteID: 6911c506ec66f7042bea6abd8dbd5b6b
+      internalID: 1879564258
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a42a3a4d126e814db3a4968521a6474
-      internalID: 1743159339
+      spriteID: 6d037db6e9e529a42a0792e61c5da79f
+      internalID: -864348229
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58b68600d221a3b4181e2edd38828a5d
-      internalID: 109305818
+      spriteID: 03157c1017d88114a846a7efd002813a
+      internalID: 2118698454
       vertices: []
       indices: 
       edges: []
@@ -223,14 +223,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d94500cdca4d814c9253124af88cd2d
-      internalID: 1040493615
+      spriteID: 136b4943cd0e8174b91aeb3b805d9f0d
+      internalID: 351533622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Boden_GameJam_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477be1b6ec2f2634e95da3e2af4a5a17
+      internalID: 389984118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boden_GameJam_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29f08c3d03a1c64d82bf5487b8a348b
+      internalID: -1073531683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boden_GameJam_8
       rect:
         serializedVersion: 2
         x: 64
@@ -244,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb634addd09945548a12224ec885bf5e
-      internalID: -653238057
+      spriteID: d1ca840f97362d4438dcc60cb3153443
+      internalID: -1427313252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boden_GameJam_7
+      name: Boden_GameJam_9
       rect:
         serializedVersion: 2
         x: 192
@@ -265,8 +307,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6637c74baeb814a468e424d4f8d80f76
-      internalID: -688537019
+      spriteID: 796d3e56d138fe9469a3f06e44cbf095
+      internalID: 1881229900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boden_GameJam_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a069132dabb914f8f5d3fae622de36
+      internalID: -1713978126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boden_GameJam_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cd1d57313babd4795a8ec17541cd9c
+      internalID: -969232569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boden_GameJam_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7848bda3901794e449d6ad305fb3e417
+      internalID: -568039597
       vertices: []
       indices: 
       edges: []
@@ -282,14 +387,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boden_GameJam_1: -393891211
-      Boden_GameJam_4: 109305818
-      Boden_GameJam_6: -653238057
-      Boden_GameJam_3: 1743159339
-      Boden_GameJam_2: 1782855704
-      Boden_GameJam_5: 1040493615
-      Boden_GameJam_7: -688537019
-      Boden_GameJam_0: -1702487002
+      Boden_GameJam_1: -1453768530
+      Boden_GameJam_4: 2118698454
+      Boden_GameJam_9: 1881229900
+      Boden_GameJam_6: 389984118
+      Boden_GameJam_3: -864348229
+      Boden_GameJam_2: 1879564258
+      Boden_GameJam_5: 351533622
+      Boden_GameJam_8: -1427313252
+      Boden_GameJam_12: -568039597
+      Boden_GameJam_10: -1713978126
+      Boden_GameJam_7: -1073531683
+      Boden_GameJam_0: 208602970
+      Boden_GameJam_11: -969232569
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

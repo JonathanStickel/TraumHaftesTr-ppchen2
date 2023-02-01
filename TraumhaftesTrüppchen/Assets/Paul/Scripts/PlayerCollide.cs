@@ -27,7 +27,7 @@ public class PlayerCollide : MonoBehaviour
            // GameObject upgrade = Instantiate(upgradePrefab);
            // 
            // upgrade.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y + 1, 0);
-            collision.gameObject.transform.position = new Vector3(-8.49f, -2.42f, 0);
+            collision.gameObject.transform.position = new Vector3(-6.25f, -2.34f, 0);
           //  Collider2D[] deathInRange = Physics2D.OverlapCircleAll(transform.position, 3, deathLayer);
           //  for (int i = 0; i < deathInRange.Length; i++)
           //  {
