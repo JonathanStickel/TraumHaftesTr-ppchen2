@@ -90,7 +90,7 @@ public class PlayerMov : MonoBehaviour
             StartCoroutine(JumpRoutine());
         }
 
-        PushPullCheck();
+        //PushPullCheck();
     }
 
     /*public GameObject LeftColl;
