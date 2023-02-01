@@ -12,9 +12,9 @@ public class fallDmg : MonoBehaviour
 
     private void Update()
     {
-        if (rb.velocity.y < -27)
+        if (rb.velocity.y < -27.5)
         {
-            Debug.Log(transform.position);
+            Debug.Log("Dead from falldamage");
         }
     }
 }

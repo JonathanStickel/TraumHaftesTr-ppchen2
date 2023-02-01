@@ -16,8 +16,7 @@ public class PlayerMov : MonoBehaviour
     private float xMov;
     // private float yMov;
     public float speed = 400;
-    private float pushSpeed;
-    private float startSpeed;
+    public float startSpeed;
     private float airSpeed;
     public Rigidbody2D rb;
     public float normaljumpForce;
@@ -31,7 +30,6 @@ public class PlayerMov : MonoBehaviour
     void Start()
     {
         airSpeed = speed * 0.75f;
-        pushSpeed = 300f;
         startSpeed = speed;
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
