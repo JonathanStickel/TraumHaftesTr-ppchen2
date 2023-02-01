@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerCollide : MonoBehaviour
 {
-    public GameObject playerPrefab;
+    public GameObject corpsePrefab;
+    public GameObject upgradePrefab;
+    public LayerMask deathLayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +22,22 @@ public class PlayerCollide : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-           // collision.gameObject.GetComponent<PlayerMov>().enabled = false;
-           // collision.gameObject.GetComponent<CamFollow>().enabled = false;
-           // collision.gameObject.GetComponent<PlayerCollide>().enabled = false;
-           // gameObject.GetComponent<Transform>().localScale.Set(1, 0.47f, 1);
-            GameObject player=Instantiate(playerPrefab);
-            player.transform.position = new Vector3(-8.16f, -1.42f, 0);
+            GameObject corpse=Instantiate(corpsePrefab);
+            corpse.transform.position = collision.gameObject.transform.position;
+           // GameObject upgrade = Instantiate(upgradePrefab);
+           // 
+           // upgrade.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y + 1, 0);
+            collision.gameObject.transform.position = new Vector3(-8.49f, -2.42f, 0);
+          //  Collider2D[] deathInRange = Physics2D.OverlapCircleAll(transform.position, 3, deathLayer);
+          //  for (int i = 0; i < deathInRange.Length; i++)
+          //  {
+          //
+          //      Destroy(deathInRange[i].gameObject);
+          //  }
 
         }
     }
+   
 }
+
+
