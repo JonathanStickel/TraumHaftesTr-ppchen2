@@ -141,6 +141,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2091080402}
+--- !u!114 &319512087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319512079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbba20a2edf156a4e9e63978bd385bec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  rb: {fileID: 319512089}
+  normaljumpForce: 100
+  coyotejumpForce: 150
+  grounded: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!50 &319512089 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 464107117672848192, guid: 675d72d5b1884a4478c43b927ff4cd0b, type: 3}
+  m_PrefabInstance: {fileID: 1503354035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &402449140
 GameObject:
   m_ObjectHideFlags: 0
