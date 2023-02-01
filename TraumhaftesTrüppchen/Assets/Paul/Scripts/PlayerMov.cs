@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PlayerMov : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class PlayerMov : MonoBehaviour
             return _instance;
         }
     }
-    private float xMov;
+    public float xMov;
     // private float yMov;
     public float speed = 400;
     public float startSpeed;
@@ -25,6 +26,8 @@ public class PlayerMov : MonoBehaviour
     public LayerMask groundLayer;
 
     public bool isPushing;
+
+    public Animator playerAnimator;
     // private float highestJumpPos;
     // Start is called before the first frame update
     void Start()
@@ -43,6 +46,7 @@ public class PlayerMov : MonoBehaviour
         if (groundCheck.Length > 0)
         {
             grounded = true;
+            playerAnimator.SetBool("Jumping", false);
         }
         else
         {
@@ -74,6 +78,7 @@ public class PlayerMov : MonoBehaviour
         if (grounded != true)
         {
             rb.drag = 0.1f;
+            playerAnimator.SetBool("Jumping", true);
         }
         if (grounded == true)
         {
@@ -89,6 +94,27 @@ public class PlayerMov : MonoBehaviour
         }
 
         //PushPullCheck();
+        DoAnimations();
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        }
+    }
+
+    public void DoAnimations()
+    {
+        if (rb.velocity.x != 0)
+            playerAnimator.SetBool("Moving", true);
+        else
+            playerAnimator.SetBool("Moving", false);
+
     }
 
     /*public GameObject LeftColl;
@@ -97,16 +123,7 @@ public class PlayerMov : MonoBehaviour
     public void PushPullCheck()
     {
         
-        if (rb.velocity.x < 0)
-        {
-            RightColl.SetActive(false);
-            LeftColl.SetActive(true);
-        }
-        if (rb.velocity.x > 0)
-        {
-            LeftColl.SetActive(false);
-            RightColl.SetActive(true);
-        }
+        
 
         if(isPushing)
         {

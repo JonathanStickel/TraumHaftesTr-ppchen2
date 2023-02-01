@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PlayerPush : MonoBehaviour
 {
@@ -10,12 +11,8 @@ public class PlayerPush : MonoBehaviour
     public PlayerMov player;
 
     GameObject box;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
+    public Animator playerAnimator;
     // Update is called once per frame
     void Update()
     {
@@ -28,12 +25,14 @@ public class PlayerPush : MonoBehaviour
             player.speed = 1000;
             box.GetComponent<FixedJoint2D>().enabled = true;
             box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
+            playerAnimator.SetBool("Pushing", true);
         }
 
         if(Input.GetMouseButtonUp(0))
         {
             player.speed = player.startSpeed;
             box.GetComponent<FixedJoint2D>().enabled = false;
+            playerAnimator.SetBool("Pushing", false);
         }
     }
 
