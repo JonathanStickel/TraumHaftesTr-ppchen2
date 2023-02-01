@@ -93,7 +93,7 @@ public class PlayerMov : MonoBehaviour
         PushPullCheck();
     }
 
-    public GameObject LeftColl;
+    /*public GameObject LeftColl;
     public GameObject RightColl;
 
     public void PushPullCheck()
@@ -118,7 +118,7 @@ public class PlayerMov : MonoBehaviour
         {
             speed = startSpeed;
         }
-    }
+    }*/
 
     private void FixedUpdate()
     {
