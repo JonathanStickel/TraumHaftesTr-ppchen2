@@ -243,7 +243,7 @@ MonoBehaviour:
   speed: 0
   rb: {fileID: 797250090}
   normaljumpForce: 100
-  coyotejumpForce: 200
+  coyotejumpForce: 500
   grounded: 0
   groundLayer:
     serializedVersion: 2
