@@ -40,7 +40,7 @@ public class PlayerMov : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rb.velocity);
+        //Debug.Log(rb.velocity);
         RaycastHit2D[] groundCheck = Physics2D.RaycastAll(transform.position, Vector3.down, 1.05f, groundLayer);
 
         if (groundCheck.Length > 0)
