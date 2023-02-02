@@ -5,6 +5,7 @@ using UnityEngine;
 public class TreeFall : MonoBehaviour
 {
     public bool isFalling;
+    public GameObject leaves;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class TreeFall : MonoBehaviour
         {
             gameObject.isStatic = false;
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            leaves.SetActive(true);
         }
     }
 }
