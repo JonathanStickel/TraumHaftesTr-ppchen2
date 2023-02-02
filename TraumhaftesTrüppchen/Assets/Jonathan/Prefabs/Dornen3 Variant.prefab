@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7500883836622062852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 366069550431822437, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_Name
+      value: Dornen3
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822439, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822457, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: deathAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 366069550431822457, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: deathAnimation
+      value: 
+      objectReference: {fileID: 3116941553469853967, guid: 0cf40953375eec14398ff1a9e4541288, type: 3}
+    - target: {fileID: 366069550431822457, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}
+      propertyPath: deathAnimationTime
+      value: 1.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5389bea8fd2ad54bab7cdfb89f810fe, type: 3}

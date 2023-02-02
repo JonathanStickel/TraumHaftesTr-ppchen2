@@ -8,6 +8,7 @@ public class PlayerCollide : MonoBehaviour
     public Animator deathAnimator;
     public GameObject corpsePrefab;
     public GameObject upgradePrefab;
+    public GameObject deathAnimation;
     public LayerMask deathLayer;
     public Vector3 startpos;
     // Start is called before the first frame update
@@ -26,9 +27,8 @@ public class PlayerCollide : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
+            StartCoroutine(Death(collision));
             collision.gameObject.transform.position = startpos;
-            Death(collision);
             // GameObject upgrade = Instantiate(upgradePrefab);
             // 
             // upgrade.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y + 1, 0);
@@ -44,10 +44,11 @@ public class PlayerCollide : MonoBehaviour
     public float deathAnimationTime;
     IEnumerator Death(Collision2D coll)
     {
+        Vector3 pos = coll.gameObject.transform.position;
+        Instantiate(deathAnimation, pos, Quaternion.identity);
         yield return new WaitForSeconds(deathAnimationTime);
-        deathAnimator.StopPlayback();
         GameObject corpse = Instantiate(corpsePrefab);
-        corpse.transform.position = coll.gameObject.transform.position;
+        corpse.transform.position = pos;
     }
 }
 
