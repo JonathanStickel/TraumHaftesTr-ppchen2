@@ -59,7 +59,9 @@ public class PlayerMov : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && grounded == true)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
-            //highestJumpPos = transform.position.y;
+            //highestJumpPos = transform.position.y;r
+            rb.velocity = Vector2.zero;
+
             rb.AddForce(Vector3.up * normaljumpForce);
             grounded = false;
             StartCoroutine(JumpRoutine());

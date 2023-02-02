@@ -13,15 +13,20 @@ public class PlayerPush : MonoBehaviour
     GameObject box;
 
     public Animator playerAnimator;
+
+    public Transform Left;
+    public Transform Right;
     // Update is called once per frame
     void Update()
     {
         Physics2D.queriesStartInColliders = false;
-        RaycastHit2D hitRight = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distance, pushMask);
-        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position, Vector2.left * transform.localScale.x, distance, pushMask);
+        RaycastHit2D hitRight = Physics2D.Raycast(Left.position, Vector2.right * transform.localScale.x, distance, pushMask);
+        RaycastHit2D hitRightDown = Physics2D.Raycast(Right.position, Vector2.right * transform.localScale.x, distance, pushMask);
+        RaycastHit2D hitLeft = Physics2D.Raycast(Left.position, Vector2.left * transform.localScale.x, distance, pushMask);
+        RaycastHit2D hitLeftDown = Physics2D.Raycast(Left.position, Vector2.left * transform.localScale.x, distance, pushMask);
 
 
-        if((hitLeft.collider != null || hitRight.collider != null) && Input.GetMouseButtonDown(0))
+        if((hitLeft.collider != null || hitRight.collider != null || hitRightDown.collider != null|| hitLeftDown.collider != null) && Input.GetMouseButtonDown(0))
         {
             if(hitLeft.collider!= null && Input.GetMouseButtonDown(0))
             box = hitLeft.collider.gameObject;
@@ -44,7 +49,7 @@ public class PlayerPush : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y) + Vector2.right * transform.localScale.x * distance);
-        Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y) + Vector2.left * transform.localScale.x * distance);
+        Gizmos.DrawLine(Left.position, new Vector2(transform.position.x, transform.position.y) + Vector2.right * transform.localScale.x * distance);
+        Gizmos.DrawLine(Left.position, new Vector2(transform.position.x, transform.position.y) + Vector2.left * transform.localScale.x * distance);
     }
 }
