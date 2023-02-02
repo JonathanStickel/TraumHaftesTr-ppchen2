@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 117687797}
   - component: {fileID: 117687798}
   - component: {fileID: 117687799}
+  - component: {fileID: 117687800}
   m_Layer: 9
   m_Name: Blatt2_links1
   m_TagString: Untagged
@@ -357,6 +358,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &117687800
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117687796}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.55}
+    newSize: {x: 0.4, y: 0.55}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.14, y: 0.225}
+      - {x: 0.089999996, y: 0.225}
+      - {x: -0.14999999, y: -0.105}
+      - {x: -0.14999999, y: -0.13499999}
+      - {x: -0.12, y: -0.24499999}
+      - {x: -0.099999994, y: -0.255}
+      - {x: -0.04, y: -0.255}
+      - {x: 0.06, y: -0.205}
+      - {x: 0.14999999, y: 0.015}
+      - {x: 0.14999999, y: 0.21499999}
 --- !u!1 &300979392
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +404,7 @@ GameObject:
   - component: {fileID: 300979393}
   - component: {fileID: 300979394}
   - component: {fileID: 300979395}
+  - component: {fileID: 300979396}
   m_Layer: 9
   m_Name: Baumstumpf1
   m_TagString: Untagged
@@ -450,7 +487,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300979392}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -463,6 +500,38 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &300979396
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300979392}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.14, y: 0.26}
+    newSize: {x: 0.14, y: 0.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.02360616, y: 0.014178449}
+      - {x: -0.043606162, y: -0.033280015}
+      - {x: -0.06, y: -0.13}
+      - {x: 0.06, y: -0.13}
+      - {x: 0.06, y: 0.099999994}
+      - {x: 0.04204901, y: 0.08311384}
+      - {x: 0.006393837, y: 0.033932284}
 --- !u!1 &481833573
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +738,7 @@ GameObject:
   - component: {fileID: 513375769}
   - component: {fileID: 513375770}
   - component: {fileID: 513375771}
+  - component: {fileID: 513375772}
   m_Layer: 9
   m_Name: Blatt_rechts1
   m_TagString: Untagged
@@ -764,6 +834,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &513375772
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513375768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.44, y: 0.6}
+    newSize: {x: 0.44, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.02, y: 0.06}
+      - {x: -0.14, y: 0.29999998}
+      - {x: -0.19, y: 0.29999998}
+      - {x: -0.19, y: 0.08}
+      - {x: -0.17, y: -0.089999996}
+      - {x: -0.03, y: -0.19999999}
+      - {x: 0.03, y: -0.22999999}
+      - {x: 0.19999999, y: -0.22999999}
+      - {x: 0.19999999, y: -0.17}
+      - {x: 0.17999999, y: -0.14}
+      - {x: 0.19999999, y: -0.07}
+      - {x: 0.19999999, y: -0.02}
 --- !u!1 &731003292
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +882,7 @@ GameObject:
   - component: {fileID: 731003293}
   - component: {fileID: 731003294}
   - component: {fileID: 731003295}
+  - component: {fileID: 731003296}
   m_Layer: 9
   m_Name: Blatt_rechts1
   m_TagString: Untagged
@@ -870,6 +978,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &731003296
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731003292}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.44, y: 0.6}
+    newSize: {x: 0.44, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.02, y: 0.06}
+      - {x: -0.14, y: 0.29999998}
+      - {x: -0.19, y: 0.29999998}
+      - {x: -0.19, y: 0.08}
+      - {x: -0.17, y: -0.089999996}
+      - {x: -0.03, y: -0.19999999}
+      - {x: 0.03, y: -0.22999999}
+      - {x: 0.19999999, y: -0.22999999}
+      - {x: 0.19999999, y: -0.17}
+      - {x: 0.17999999, y: -0.14}
+      - {x: 0.19999999, y: -0.07}
+      - {x: 0.19999999, y: -0.02}
 --- !u!1 &731121399
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +1026,7 @@ GameObject:
   - component: {fileID: 731121400}
   - component: {fileID: 731121401}
   - component: {fileID: 731121402}
+  - component: {fileID: 731121403}
   m_Layer: 9
   m_Name: Blatt3_links1
   m_TagString: Untagged
@@ -976,6 +1122,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &731121403
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731121399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.3, y: 0.44}
+    newSize: {x: 0.3, y: 0.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.03, y: 0.12}
+      - {x: -0.12, y: -0.049999997}
+      - {x: -0.12, y: -0.11}
+      - {x: -0.08, y: -0.17}
+      - {x: -0.01, y: -0.17}
+      - {x: 0.049999997, y: -0.14999999}
+      - {x: 0.14, y: 0.06}
+      - {x: 0.14, y: 0.12}
 --- !u!1 &953136689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1224,7 @@ GameObject:
   - component: {fileID: 1145852249}
   - component: {fileID: 1145852250}
   - component: {fileID: 1145852251}
+  - component: {fileID: 1145852252}
   m_Layer: 9
   m_Name: Blatt_rechts1
   m_TagString: Untagged
@@ -1140,6 +1320,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &1145852252
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145852248}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.44, y: 0.6}
+    newSize: {x: 0.44, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.02, y: 0.06}
+      - {x: -0.14, y: 0.29999998}
+      - {x: -0.19, y: 0.29999998}
+      - {x: -0.19, y: 0.08}
+      - {x: -0.17, y: -0.089999996}
+      - {x: -0.03, y: -0.19999999}
+      - {x: 0.03, y: -0.22999999}
+      - {x: 0.19999999, y: -0.22999999}
+      - {x: 0.19999999, y: -0.17}
+      - {x: 0.17999999, y: -0.14}
+      - {x: 0.19999999, y: -0.07}
+      - {x: 0.19999999, y: -0.02}
 --- !u!1 &1147026458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,6 +1368,7 @@ GameObject:
   - component: {fileID: 1147026459}
   - component: {fileID: 1147026460}
   - component: {fileID: 1147026461}
+  - component: {fileID: 1147026462}
   m_Layer: 9
   m_Name: Blatt_rechts1 (2)
   m_TagString: Untagged
@@ -1246,6 +1464,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &1147026462
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147026458}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.44, y: 0.6}
+    newSize: {x: 0.44, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.02, y: 0.06}
+      - {x: -0.14, y: 0.29999998}
+      - {x: -0.19, y: 0.29999998}
+      - {x: -0.19, y: 0.08}
+      - {x: -0.17, y: -0.089999996}
+      - {x: -0.03, y: -0.19999999}
+      - {x: 0.03, y: -0.22999999}
+      - {x: 0.19999999, y: -0.22999999}
+      - {x: 0.19999999, y: -0.17}
+      - {x: 0.17999999, y: -0.14}
+      - {x: 0.19999999, y: -0.07}
+      - {x: 0.19999999, y: -0.02}
 --- !u!1 &1353808647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1525,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353808647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.275309, y: 4.6821575, z: -1.7907834}
+  m_LocalPosition: {x: -31.275309, y: 4.49, z: -1.7907834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1297,6 +1552,7 @@ GameObject:
   - component: {fileID: 1430204556}
   - component: {fileID: 1430204557}
   - component: {fileID: 1430204558}
+  - component: {fileID: 1430204559}
   m_Layer: 9
   m_Name: Blatt_rechts1 (1)
   m_TagString: Untagged
@@ -1392,6 +1648,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &1430204559
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430204555}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.44, y: 0.6}
+    newSize: {x: 0.44, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.02, y: 0.06}
+      - {x: -0.14, y: 0.29999998}
+      - {x: -0.19, y: 0.29999998}
+      - {x: -0.19, y: 0.08}
+      - {x: -0.17, y: -0.089999996}
+      - {x: -0.03, y: -0.19999999}
+      - {x: 0.03, y: -0.22999999}
+      - {x: 0.19999999, y: -0.22999999}
+      - {x: 0.19999999, y: -0.17}
+      - {x: 0.17999999, y: -0.14}
+      - {x: 0.19999999, y: -0.07}
+      - {x: 0.19999999, y: -0.02}
 --- !u!1 &1576603712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,7 +1713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576603712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.95, y: 5.22, z: 0}
+  m_LocalPosition: {x: -29.95, y: 5.11, z: 0}
   m_LocalScale: {x: -5.492088, y: 5.492088, z: 5.492088}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1497,7 +1790,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576603712}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1556,6 +1849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFalling: 0
   leaves: {fileID: 1353808647}
+  standingTree: {fileID: 2001871889}
 --- !u!1 &1689419142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +2013,7 @@ GameObject:
   - component: {fileID: 1709153157}
   - component: {fileID: 1709153158}
   - component: {fileID: 1709153159}
+  - component: {fileID: 1709153160}
   m_Layer: 9
   m_Name: Blatt3_rechts1
   m_TagString: Untagged
@@ -1814,6 +2109,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &1709153160
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709153156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.24, y: 0.37}
+    newSize: {x: 0.24, y: 0.37}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.12, y: 0.13499999}
+      - {x: -0.12, y: 0.065}
+      - {x: -0.06, y: -0.095}
+      - {x: 0.02, y: -0.155}
+      - {x: 0.049999997, y: -0.155}
+      - {x: 0.11, y: -0.105}
+      - {x: 0.11, y: -0.005}
+      - {x: -0.01, y: 0.13499999}
 --- !u!1 &1997586299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,6 +2600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFalling: 0
   leaves: {fileID: 0}
+  standingTree: {fileID: 0}
 --- !u!212 &2072132141
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class playerGraphics : MonoBehaviour
     public bool isFacingRight;
 
     public Vector3 walkScale;
+    public Vector3 jumpScale;
     private Vector3 normalScale;
     // Start is called before the first frame update
     void Start()
@@ -33,12 +34,18 @@ public class playerGraphics : MonoBehaviour
             Flip();
         }
 
-        if (playerAnimator.GetBool("Moving") && !playerAnimator.GetBool("Pushing"))
+        if (playerAnimator.GetBool("Moving") && !playerAnimator.GetBool("Pushing") && !playerAnimator.GetBool("Jumping"))
         {
             transform.localScale = walkScale;
         }
+        else if (playerAnimator.GetBool("Jumping") && playerAnimator.GetBool("Moving"))
+        {
+            transform.localScale = jumpScale;
+        }
         else
             transform.localScale = normalScale;
+
+        
 
         if (!playerAnimator.GetBool("Pushing"))
         {
