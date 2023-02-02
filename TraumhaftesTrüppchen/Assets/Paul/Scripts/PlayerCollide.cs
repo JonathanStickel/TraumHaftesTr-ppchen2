@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PlayerCollide : MonoBehaviour
 {
+    public Animator deathAnimator;
     public GameObject corpsePrefab;
     public GameObject upgradePrefab;
     public LayerMask deathLayer;
@@ -19,16 +21,17 @@ public class PlayerCollide : MonoBehaviour
     {
         
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            GameObject corpse=Instantiate(corpsePrefab);
-            corpse.transform.position = collision.gameObject.transform.position;
+
+            collision.gameObject.transform.position = startpos;
+            Death(collision);
             // GameObject upgrade = Instantiate(upgradePrefab);
             // 
             // upgrade.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y + 1, 0);
-            collision.gameObject.transform.position = startpos;
           //  Collider2D[] deathInRange = Physics2D.OverlapCircleAll(transform.position, 3, deathLayer);
           //  for (int i = 0; i < deathInRange.Length; i++)
           //  {
@@ -38,7 +41,15 @@ public class PlayerCollide : MonoBehaviour
 
         }
     }
-   
+    public float deathAnimationTime;
+    IEnumerator Death(Collision2D coll)
+    {
+        yield return new WaitForSeconds(deathAnimationTime);
+        deathAnimator.StopPlayback();
+        GameObject corpse = Instantiate(corpsePrefab);
+        corpse.transform.position = coll.gameObject.transform.position;
+    }
 }
+
 
 

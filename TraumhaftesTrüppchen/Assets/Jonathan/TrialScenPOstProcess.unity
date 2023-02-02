@@ -185,8 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94bb60cad24e7de4d81f69a7c3f6187e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blendIn: {fileID: 0}
-  blendInSpeed: 0
+  blendIn: {fileID: 269304360}
+  blendInSpeed: 0.1
 --- !u!1 &434900955
 GameObject:
   m_ObjectHideFlags: 0
