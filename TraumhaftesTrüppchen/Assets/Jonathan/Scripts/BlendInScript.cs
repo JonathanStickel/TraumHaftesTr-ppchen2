@@ -14,7 +14,7 @@ public class BlendInScript : MonoBehaviour
     }
     private void Update()
     {
-        if(vignette.intensity.value >= 0.65f)
+        if(vignette.intensity.value >= 0.55f)
         vignette.intensity.value -= blendInSpeed * Time.deltaTime;
     }
 }

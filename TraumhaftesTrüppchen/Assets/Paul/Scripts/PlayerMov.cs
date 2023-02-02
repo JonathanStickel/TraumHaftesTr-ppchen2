@@ -28,6 +28,7 @@ public class PlayerMov : MonoBehaviour
     public bool isPushing;
 
     public Animator playerAnimator;
+    public float maxVelocity;
     // private float highestJumpPos;
     // Start is called before the first frame update
     void Start()
@@ -59,8 +60,8 @@ public class PlayerMov : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && grounded == true)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
-            //highestJumpPos = transform.position.y;r            rb.velocity = Vector2.zero;
-
+            //highestJumpPos = transform.position.y;r
+            //rb.velocity = Vector2.zero;
 
             rb.AddForce(Vector3.up * normaljumpForce);
             grounded = false;
@@ -98,7 +99,10 @@ public class PlayerMov : MonoBehaviour
         //PushPullCheck();
         DoAnimations();
 
-        
+        if(rb.velocity.magnitude > maxVelocity)
+        {
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelocity);
+        }
     }
 
     public void DoAnimations()
