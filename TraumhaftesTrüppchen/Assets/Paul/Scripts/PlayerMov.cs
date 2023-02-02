@@ -22,6 +22,7 @@ public class PlayerMov : MonoBehaviour
     public Rigidbody2D rb;
     public float normaljumpForce;
     public float coyotejumpForce;
+    [SerializeField]
     public bool grounded;
     public LayerMask groundLayer;
 
