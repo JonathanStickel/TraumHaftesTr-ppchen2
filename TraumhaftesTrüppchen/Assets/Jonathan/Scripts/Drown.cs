@@ -29,9 +29,10 @@ public class Drown : MonoBehaviour
         {
             fluids = i;
         }
-        Debug.Log(fluids);
+
+        //Debug.Log(fluids);
         if (fluids <= maxFluids)
-            Debug.Log("Playerdied by drowning");
+            ;            //Debug.Log("Playerdied by drowning");
         else
             fluids = 0;
     }
