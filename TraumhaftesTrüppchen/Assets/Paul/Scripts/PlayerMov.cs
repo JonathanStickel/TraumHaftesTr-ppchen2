@@ -59,8 +59,8 @@ public class PlayerMov : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && grounded == true)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
-            //highestJumpPos = transform.position.y;r
-            rb.velocity = Vector2.zero;
+            //highestJumpPos = transform.position.y;r            rb.velocity = Vector2.zero;
+
 
             rb.AddForce(Vector3.up * normaljumpForce);
             grounded = false;
@@ -130,7 +130,7 @@ public class PlayerMov : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        //rb.velocity = new Vector3(xMov * speed, rb.velocity.y, 0) * Time.fixedDeltaTime;
         rb.AddForce(new Vector2(xMov, 0) * speed * Time.deltaTime);
         //transform.position += new Vector3(xMov, 0, 0) * Time.deltaTime * speed;
     }
