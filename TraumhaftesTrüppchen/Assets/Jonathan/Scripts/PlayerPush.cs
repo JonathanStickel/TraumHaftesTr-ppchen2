@@ -23,7 +23,6 @@ public class PlayerPush : MonoBehaviour
 
         if((hitLeft.collider != null || hitRight.collider != null) && Input.GetMouseButtonDown(0))
         {
-            Debug.Log("test0");
             if(hitLeft.collider!= null && Input.GetMouseButtonDown(0))
             box = hitLeft.collider.gameObject;
             if(hitRight.collider!= null)
