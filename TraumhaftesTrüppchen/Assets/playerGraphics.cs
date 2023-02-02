@@ -26,11 +26,11 @@ public class playerGraphics : MonoBehaviour
             Flip();
         }
     }
-    public void Flip()
+    /*public void Flip()
     {
         if (isFacingRight)
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         else
-            transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
-    }
+            transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y
+    }*/
 }

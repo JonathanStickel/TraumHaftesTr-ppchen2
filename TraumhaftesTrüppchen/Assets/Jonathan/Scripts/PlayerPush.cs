@@ -31,6 +31,7 @@ public class PlayerPush : MonoBehaviour
         if(Input.GetMouseButtonUp(0))
         {
             player.speed = player.startSpeed;
+            if(box != null)
             box.GetComponent<FixedJoint2D>().enabled = false;
             playerAnimator.SetBool("Pushing", false);
         }
