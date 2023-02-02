@@ -96,16 +96,7 @@ public class PlayerMov : MonoBehaviour
         //PushPullCheck();
         DoAnimations();
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-
-        }
+        
     }
 
     public void DoAnimations()
@@ -143,7 +134,7 @@ public class PlayerMov : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.CompareTag("Pushable"))
         {
             speed = startSpeed;
             grounded = true;
