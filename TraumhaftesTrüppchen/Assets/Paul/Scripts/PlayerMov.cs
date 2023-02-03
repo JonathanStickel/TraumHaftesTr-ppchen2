@@ -27,6 +27,7 @@ public class PlayerMov : MonoBehaviour
     public LayerMask groundLayer;
 
     public bool isPushing;
+    public bool isMoving;
 
     public Animator playerAnimator;
     public float maxVelocity;
@@ -104,14 +105,23 @@ public class PlayerMov : MonoBehaviour
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelocity);
         }
+
+        AudioStuff();
     }
 
     public void DoAnimations()
     {
         if (rb.velocity.x != 0)
+        {
             playerAnimator.SetBool("Moving", true);
+
+            isMoving = true;
+        }
         else
+        {
             playerAnimator.SetBool("Moving", false);
+            isMoving = false;
+        }
 
     }
 
@@ -155,5 +165,14 @@ public class PlayerMov : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().gravityScale = 3f;
 
 
+    }
+
+    public AudioSource moving;
+    public void AudioStuff()
+    {
+        if (isMoving && grounded)
+            moving.Play();
+        else
+            moving.Stop();
     }
 }
