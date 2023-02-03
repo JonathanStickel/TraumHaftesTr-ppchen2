@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b157af60d7800484fa62824e7d018c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: CorpseTest
+  LevelName: MainScene
   CreditName: Credits
   TutorialName: Tutorial
 --- !u!4 &458846188
