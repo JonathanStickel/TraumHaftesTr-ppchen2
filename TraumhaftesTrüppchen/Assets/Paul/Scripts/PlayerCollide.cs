@@ -14,6 +14,8 @@ public class PlayerCollide : MonoBehaviour
     public bool drowned = false;
 
     public GameObject Player;
+
+    public AudioSource deathSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class PlayerCollide : MonoBehaviour
             Player.transform.position = startpos;
             StartCoroutine(Death(GetComponent<Collision2D>()));
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -37,6 +40,8 @@ public class PlayerCollide : MonoBehaviour
         {
             StartCoroutine(Death(collision));
             collision.gameObject.transform.position = startpos;
+            if(!deathSound.isPlaying)
+            deathSound.Play();
             // GameObject upgrade = Instantiate(upgradePrefab);
             // 
             // upgrade.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y + 1, 0);
