@@ -11,6 +11,9 @@ public class PlayerCollide : MonoBehaviour
     public GameObject deathAnimation;
     public LayerMask deathLayer;
     public Vector3 startpos;
+    public bool drowned = false;
+
+    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,12 @@ public class PlayerCollide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(drowned)
+        {
+            drowned = false;
+            Player.transform.position = startpos;
+            StartCoroutine(Death(GetComponent<Collision2D>()));
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -41,7 +49,7 @@ public class PlayerCollide : MonoBehaviour
 
         }
     }
-    public float deathAnimationTime;
+    public float deathAnimationTime  = 1.3f;
     IEnumerator Death(Collision2D coll)
     {
         Vector3 pos = coll.gameObject.transform.position;
