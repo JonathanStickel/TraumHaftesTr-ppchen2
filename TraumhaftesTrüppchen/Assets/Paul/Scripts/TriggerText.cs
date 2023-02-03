@@ -20,7 +20,7 @@ public class TriggerText : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            textManager.GetComponent<TextChange>().isNearSpikes = true;
+            //textManager.GetComponent<TextChange>().isNearSpikes = true;
         }
     }
 }

@@ -8,7 +8,6 @@ TagManager:
   - Spike
   - Pushable
   - Fluid
-  - TextTrigger
   layers:
   - Default
   - TransparentFX
