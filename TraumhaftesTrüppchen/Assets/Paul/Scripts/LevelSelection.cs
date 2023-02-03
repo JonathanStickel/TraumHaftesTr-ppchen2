@@ -7,6 +7,7 @@ public class LevelSelection : MonoBehaviour
 {
     public string LevelName;
     public string CreditName;
+    public string TutorialName;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +27,9 @@ public class LevelSelection : MonoBehaviour
     public void Credits()
     {
         SceneManager.LoadScene(CreditName);
+    }
+    public void Tutorial()
+    {
+        SceneManager.LoadScene(TutorialName);
     }
 }
